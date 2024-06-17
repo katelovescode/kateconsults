@@ -6,16 +6,18 @@
       , title: data.title %}
   </head>
   <body class="{{ data.layout }} {{ data.page_class }}">
-    <div class="navbar">
-      {% render "navbar"
-        , metadata: site.metadata
-        , resource: resource %}
-      {% render "footer"
-        , metadata: site.metadata %}
-    </div>
+    <div class="wrapper">
+      <div class="sidebar">
+        {% render "navbar"
+          , metadata: site.metadata
+          , resource: resource %}
+        {% render "footer"
+          , metadata: site.metadata %}
+      </div>
 
-    <main>
-      {{ content }}
-    </main>
+      <main>
+        {{ content }}
+      </main>
+    </div>
   </body>
 </html>
