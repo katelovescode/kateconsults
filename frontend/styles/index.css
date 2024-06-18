@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Yellowtail&display=swap");
+
 :root {
-  --navbar-background: rgba(0, 0, 0, 0.04);
-  --navbar-links: rgba(0, 0, 0, 0.4);
-  --heading-color: black;
+  --sidebar-background: rgba(0, 0, 0, 0.04);
+  --sidebar-links: rgba(0, 0, 0, 0.4);
+  --sidebar-links-hover: #2c2c2c;
   --current-nav-color: black;
+  --heading-color: black;
   --light: #d60270;
   --medium: #744d96;
   --dark: #0038a8;
@@ -19,31 +22,35 @@
 html,
 body {
   margin: 0;
-  font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD,
-    Georgia, serif;
+  font-family: "Comme", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
   .sidebar {
-    padding-top: 3em;
-    padding-bottom: 40px;
-    padding-left: 3em;
-    padding-right: 3em;
-    width: 25%;
+    padding: 40px 0;
+    width: 30%;
     position: fixed;
     bottom: 0;
     top: 0;
     left: 0;
     overflow-y: scroll;
     z-index: 1001;
-    background: rgba(0, 0, 0, 0.04);
+    background: var(--sidebar-background);
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    a {
+      color: var(--sidebar-links);
+    }
     @media (min-width: 992px) {
-      width: 25%;
+      width: 30%;
     }
     @media (max-width: 991.98px) {
       width: 270px;
@@ -57,33 +64,83 @@ body {
     }
     header {
       text-align: center;
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-family: "Yellowtail", cursive;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-top: -25px;
+      }
       img {
         display: inline-block;
         width: 100px;
         max-width: 100%;
       }
     }
+    nav {
+      text-align: center;
+      ul {
+        list-style: none;
+        li {
+          font-size: 1.1em;
+          font-weight: 700;
+          padding: 15px 0;
+          text-underline-offset: 10px;
+          a {
+            text-decoration: none;
+            &:hover {
+              font-weight: 900;
+              text-decoration: underline;
+              color: var(--current-nav-color);
+            }
+          }
+        }
+      }
+    }
     footer {
       position: absolute;
       bottom: 40px;
-      right: 1.5em;
-      left: 1.5em;
       font-size: 14px;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.6);
-      padding: 0 20px;
+      width: 100%;
+      padding: 0 40px;
+      .sidebar-form-field {
+        display: block;
+        label {
+          display: block;
+          padding: 10px 0;
+        }
+        input {
+          height: 40px;
+          padding: 5px;
+        }
+        input,
+        textarea {
+          width: 100%;
+        }
+        textarea {
+          height: 100px;
+        }
+      }
+      button {
+        margin: 15px 0 0 0;
+      }
     }
   }
   main {
     width: 100%;
     float: right;
+    padding: 0 40px;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     @media (min-width: 992px) {
-      width: 75%;
+      width: 70%;
     }
   }
 }
