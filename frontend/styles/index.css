@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-  --sidebar-background: rgba(0, 0, 0, 0.04);
-  --sidebar-links: rgba(0, 0, 0, 0.4);
-  --sidebar-links-hover: #2c2c2c;
-  --current-nav-color: black;
   --heading-color: black;
   --light: #d60270;
   --medium: #744d96;
   --dark: #0038a8;
   --action-color: var(--dark);
+  --current-nav-color: var(--light);
+  --links: black;
 }
 
 *,
@@ -22,76 +20,71 @@
 html,
 body {
   margin: 0;
-  font-family: "Comme", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Platypi", serif;
 }
 
 .wrapper {
-  .sidebar {
-    padding: 40px 0;
-    width: 30%;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    overflow-y: scroll;
-    z-index: 1001;
-    background: var(--sidebar-background);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  .navbar {
+    background: white;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    a {
-      color: var(--sidebar-links);
-    }
-    @media (min-width: 992px) {
-      width: 30%;
-    }
-    @media (max-width: 991.98px) {
-      width: 270px;
-      -moz-transform: translateX(-270px);
-      -webkit-transform: translateX(-270px);
-      -ms-transform: translateX(-270px);
-      -o-transform: translateX(-270px);
-      transform: translateX(-270px);
-      padding-top: 2em;
-      background: rgba(0, 0, 0, 0.04);
-    }
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     header {
+      display: flex;
       text-align: center;
+      padding-left: 100px;
+      img {
+        width: 65px;
+        max-width: 100%;
+        margin: 0 20px;
+      }
       h1 {
-        font-size: 2rem;
+        line-height: 2.5rem;
       }
       h2 {
-        font-family: "Yellowtail", cursive;
-        font-weight: 900;
-        font-size: 2rem;
-        margin-top: -25px;
-      }
-      img {
-        display: inline-block;
-        width: 100px;
-        max-width: 100%;
+        font-family: "Dancing Script", cursive;
+        margin-top: -20px;
       }
     }
     nav {
       text-align: center;
+      padding-right: 100px;
       ul {
+        display: flex;
         list-style: none;
         li {
-          font-size: 1.1em;
+          font-family: "Platypi", serif;
           font-weight: 700;
-          padding: 15px 0;
+          margin: 15px;
           text-underline-offset: 10px;
+          font-size: 1.5rem;
           a {
+            &.current {
+              color: var(--current-nav-color);
+            }
+            color: var(--links);
             text-decoration: none;
             &:hover {
-              font-weight: 900;
               text-decoration: underline;
               color: var(--current-nav-color);
             }
@@ -99,48 +92,21 @@ ul {
         }
       }
     }
-    footer {
-      position: absolute;
-      bottom: 40px;
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(0, 0, 0, 0.6);
-      width: 100%;
-      padding: 0 40px;
-      .sidebar-form-field {
-        display: block;
-        label {
-          display: block;
-          padding: 10px 0;
-        }
-        input {
-          height: 40px;
-          padding: 5px;
-        }
-        input,
-        textarea {
-          width: 100%;
-        }
-        textarea {
-          height: 100px;
-        }
-      }
-      button {
-        margin: 15px 0 0 0;
-      }
-    }
   }
   main {
-    width: 100%;
-    float: right;
-    padding: 0 40px;
+    padding: 0 150px;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    @media (min-width: 992px) {
-      width: 70%;
-    }
+  }
+
+  footer {
+    background: white;
+    text-align: center;
+    color: darkgray;
+    margin-top: auto;
+    padding: 10px 0;
   }
 }

@@ -1,10 +1,9 @@
-<a href="#">
-  <i></i>
-</a>
 <header>
-  <img src="{{ '/images/logo.svg' | relative_url }}" alt="Asymmetrical infinity symbol logo, with a blue-purple-pink gradient from bottom-left to top-right" />
-  <h1>Kate Donaldson</h1>
-  <h2>Consulting & Coaching</h2>
+  <img src="{{ '/images/logo.svg' | relative_url }}" alt="Spiral flower bloom, with a blue-purple-pink gradient from bottom-right to top-left" />
+  <div>
+    <h1>Kate Donaldson</h1>
+    <h2>Consulting & Coaching</h2>
+  </div>
 </header>
 
 <nav>
@@ -13,5 +12,6 @@
     <li><a href="{{ '/' | relative_url }}" class="{% if current == "index" %}current{% endif %}">Home</a></li>
     <li><a href="{{ '/about' | relative_url }}" class="{% if current == "about" %}current{% endif %}">About</a></li>
     <li><a href="{{ '/posts' | relative_url }}" class="{% if current == "posts" %}current{% endif %}">Posts</a></li>
+    <li><a href="{{ '/contact' | relative_url }}" class="{% if current == "contact" %}current{% endif %}">Contact</a></li>
   </ul>
 </nav>
