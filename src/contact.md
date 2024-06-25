@@ -3,4 +3,6 @@ layout: page
 title: Contact
 ---
 
-{% render "contact_form" %}
+<div class="contact-page">
+  {% render "contact_form" %}
+</div>

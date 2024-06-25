@@ -11,19 +11,19 @@ layout: default
 <div class="services">
   <h2>Services</h2>
     <div class="tiles">
-    <div>
-      <h3>Culture</h3>
-      <p>10x more important than compensation.</p>
-      <cite>(Source: <a href="https://sloanreview.mit.edu/article/toxic-culture-is-driving-the-great-resignation/">MIT/Sloan</a>)</cite>
-    </div>
-    <div>
-      <h3>Coaching</h3>
-      <p>From C-level to individual contributor, everyone needs a coach sometimes.</p>
-    </div>
-    <div>
-      <h3>Coding</h3>
-      <p>Looking for a little extra help?</p>
-    </div>
+      <div>
+        <h3>Culture</h3>
+        <p>10x more important than compensation.</p>
+        <cite>(Source: <a href="https://sloanreview.mit.edu/article/toxic-culture-is-driving-the-great-resignation/">MIT/Sloan</a>)</cite>
+      </div>
+      <div>
+        <h3>Coaching</h3>
+        <p>From C-level to individual contributor, everyone needs a coach sometimes.</p>
+      </div>
+      <div>
+        <h3>Coding</h3>
+        <p>Looking for a little extra help?</p>
+      </div>
   </div>
 </div>
 
@@ -48,13 +48,16 @@ layout: default
 
 <div class="latest-posts">
   <h2>Latest Posts</h2>
-  <ul>
-  {% for post in collections.posts.resources %}
-    <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
-    </li>
+  <div class="tiles">
+  {% for post in collections.posts.resources limit:3 %}
+    <div>
+      <a href="{{ post.relative_url }}">
+        <h3>{{ post.data.title }}</h3>
+        <p>{{post.data.date}}</p>
+      </a>
+    </div>
   {% endfor %}
-</ul>
+  </div>
 </div>
 
 {% render "contact_form" %}

@@ -1,51 +1,53 @@
-<h3>Get in touch</h3>
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input
-    type="hidden"
-    name="access_key"
-    value="b7aa1433-d9d1-435e-9f87-90ab7bffe3de" />
-  <input
-    type="hidden"
-    name="subject"
-    value="New message from Kate Loves Code web form" />
-  {% if site.url %}
+<div class="contact-form">
+  <h3>Get in touch</h3>
+  <form action="https://api.web3forms.com/submit" method="POST">
     <input
       type="hidden"
-      name="redirect"
-      value="{{ site.url }}/thanks">
-  {% else %}
+      name="access_key"
+      value="b7aa1433-d9d1-435e-9f87-90ab7bffe3de" />
     <input
       type="hidden"
-      name="redirect"
-      value="http://localhost:4000/thanks">
-  {% endif %}
-  <input
-    type="checkbox"
-    name="botcheck"
-    class="hidden"
-    style="display: none;">
-  <input
-    type="hidden"
-    name="from_name"
-    value="Kate Loves Code web form">
+      name="subject"
+      value="New message from Kate Loves Code web form" />
+    {% if site.url %}
+      <input
+        type="hidden"
+        name="redirect"
+        value="{{ site.url }}/thanks">
+    {% else %}
+      <input
+        type="hidden"
+        name="redirect"
+        value="http://localhost:4000/thanks">
+    {% endif %}
+    <input
+      type="checkbox"
+      name="botcheck"
+      class="hidden"
+      style="display: none;">
+    <input
+      type="hidden"
+      name="from_name"
+      value="Kate Loves Code web form">
 
-  <div>
-    <label>Name</label>
-    <input
-      type="text"
-      name="name"
-      required />
-  </div>
-  <div>
-    <label>Email</label>
-    <input
-      type="email"
-      name="email"
-      required />
-  </div>
-  <div>
-    <label>Message</label>
-    <textarea name="message" required></textarea>
-  </div>
-  <button type="submit">Send Message</button>
-</form>
+    <div>
+      <label>Name</label>
+      <input
+        type="text"
+        name="name"
+        required />
+    </div>
+    <div>
+      <label>Email</label>
+      <input
+        type="email"
+        name="email"
+        required />
+    </div>
+    <div>
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
