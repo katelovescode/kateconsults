@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Your awesome title
-tagline: This site is totally awesome
-email: your-email@example.com
+title: Kate Donaldson
+tagline: Consulting & Coaching
+email: kate@katelovescode.com
 description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  In today's competitive landscape, retaining top-tier software engineers is increasingly challenging. Issues like demanding on-call schedules, deceptive "unlimited" PTO policies, and limited autonomy are undermining corporate culture, leading to talent drain. Let me guide you in cultivating a robust, supportive environment that not only retains but empowers your engineers, ensuring sustained organizational prosperity.
