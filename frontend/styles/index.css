@@ -146,16 +146,20 @@ a {
     }
     .services,
     .latest-posts,
-    .focus {
+    .values {
       margin: 150px -25%;
       h2 {
         font-size: 2.5rem;
         margin-bottom: 50px;
         text-align: center;
       }
+      h3 {
+        text-align: center;
+      }
       .tiles {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 40px;
         div {
           font-size: 1.15rem;
           filter: drop-shadow(5px 5px 4px var(--shadow));
@@ -195,13 +199,13 @@ a {
         }
       }
     }
-    .focus {
+    .values {
       color: white;
       margin: 0 -50%;
       padding: 20px 0 100px 0;
       background-color: var(--dark);
       p {
-        width: 80%;
+        width: 40%;
         text-align: left;
         margin: 0 auto 20px auto;
       }

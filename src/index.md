@@ -12,37 +12,55 @@ layout: default
   <h2>Services</h2>
     <div class="tiles">
       <div>
-        <h3>Culture</h3>
-        <p>10x more important than compensation.</p>
-        <cite>(Source: <a href="https://sloanreview.mit.edu/article/toxic-culture-is-driving-the-great-resignation/">MIT/Sloan</a>)</cite>
+        <a href="{{ '/services#culture' | relative_url }}">
+          <h3>Culture</h3>
+          <p>10x more important than compensation.</p>
+        </a>
       </div>
       <div>
+        <a href="{{ '/services#coaching' | relative_url }}">
         <h3>Coaching</h3>
         <p>From C-level to individual contributor, everyone needs a coach sometimes.</p>
-      </div>
-      <div>
-        <h3>Coding</h3>
-        <p>Looking for a little extra help?</p>
+        </a>
       </div>
   </div>
 </div>
 
-<div class="focus">
-  <h2>My Focus</h2>
-  <p>
-    I have reset the sensors to scan for frequencies outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-  </p>
+<div class="values">
+  <h2>My Values</h2>
+    <p>
+      WIP - Something about living your values and how humans need to do that in all facets of life including work.
+    </p>
+
+  <h3>Equity</h3>
 
   <p>
-    Shields up. I recommend we transfer power to phasers and arm the photon torpedoes. Something strange on the detector circuit. The weapons must have disrupted our communicators. You saw something as tasty as meat, but inorganically materialized out of patterns used by our transporters. Captain, the most elementary and valuable statement in science, the beginning of wisdom, is 'I do not know.' All transporters off.
+    We don't need to settle for a world that is unfair.  We can be the source of that change.  <b>You</b> can be the source of that change.
   </p>
+  <h3>Transparency</h3>
 
   <p>
-    Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant failure. Fluctuate phaser resonance frequencies. Resistance is futile. Recommend we adjust shield harmonics to the upper EM band when proceeding. These appear to be some kind of power-wave-guide conduits which allow them to work collectively as they perform ship functions. Increase deflector modulation to upper frequency band.
+    Transparency enhances your company’s credibility and reputation, making it more attractive to investors, partners, and candidates who value integrity and openness. Transparent practices contribute to smoother operations, reduced conflicts, and stronger relationships, driving sustainable growth and resilience. If you don't trust your employees with information, <i>why did you hire them?</i>
   </p>
+  <h3>Autonomy</h3>
 
   <p>
-    Run a manual sweep of anomalous airborne or electromagnetic readings. Radiation levels in our atmosphere have increased by 3,000 percent. Electromagnetic and subspace wave fronts approaching synchronization. What is the strength of the ship's deflector shields at maximum output? The wormhole's size and short period would make this a local phenomenon. Do you have sufficient data to compile a holographic simulation?
+     WIP - Autonomous employees tend to be more productive as they can tailor their workflows to suit their strengths and preferences, ultimately driving better outcomes for the organization as a whole. Thus, valuing autonomy not only cultivates a positive work culture but also enhances overall performance and competitiveness in the market.
+  </p>
+  <h3>Empowerment</h3>
+
+  <p>
+    When employees feel empowered to make decisions and take ownership of their work, they become more engaged and committed to achieving company goals. This results in higher productivity, faster problem-solving, and a culture of continuous improvement. Empowerment also cultivates leadership potential at all levels of your organization, fostering a pipeline of capable leaders who can drive future growth and adaptability in a dynamic business environment.
+  </p>
+  <h3>Compassion</h3>
+
+  <p>
+    WIP - I want to put something in here about how companies owe the community in which they operate positive contributions, as the community in which they operate make it possible for them to exist in the first place.  Showing compassion to employees and customers alike is a way to put positive contributions into the community.  But I need better words.
+  </p>
+  <h3>Servant Leadership</h3>
+
+  <p>
+    Servant leaders prioritize the needs of their employees and strive to empower them to achieve their full potential. This approach fosters a culture of trust, respect, and mutual support, where leaders serve as mentors and facilitators of growth rather than authoritative figures. Servant leadership promotes a cohesive and motivated workforce, resulting in higher employee satisfaction, stronger team dynamics, and improved organizational performance.
   </p>
 </div>
 
