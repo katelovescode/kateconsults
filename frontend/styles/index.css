@@ -11,13 +11,6 @@
   --nav-links: black;
 }
 
-/* media query sizes
-  mobile: 425px
-  tablet: 825px
-  desktop: TBD
-  high-res: TBD
-  */
-
 *,
 *::before,
 *::after {
@@ -38,6 +31,18 @@ h4,
 h5,
 h6 {
   font-family: "Platypi", serif;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
 }
 
 a {
@@ -99,12 +104,12 @@ body:has(.side-menu:checked) {
         max-width: 100%;
       }
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.3em;
+        margin-bottom: -10px;
       }
       h2 {
         font-family: "Dancing Script", cursive;
-        font-size: 1rem;
-        margin-top: -20px;
+        font-size: 1.1em;
       }
     }
     .hamburger-menu {
@@ -172,12 +177,13 @@ body:has(.side-menu:checked) {
         display: flex;
         list-style: none;
         flex-direction: column;
+        padding-top: 20px;
         li {
           font-family: "Platypi", serif;
           font-weight: 700;
           margin: 15px;
           text-underline-offset: 10px;
-          font-size: 1.1rem;
+          font-size: 1.5rem;
           a {
             &.current {
               color: var(--current-nav-color);
@@ -242,17 +248,9 @@ body:has(.side-menu:checked) {
     .services,
     .latest-posts,
     .values,
-    .hero {
-      padding: 0 5%;
-    }
-    .services,
-    .latest-posts,
-    .values {
-      h2 {
-        font-size: 2.5rem;
-        margin-bottom: 50px;
-        text-align: center;
-      }
+    .contact-form {
+      padding: 20px 5%;
+      h2,
       h3 {
         text-align: center;
       }
@@ -262,10 +260,8 @@ body:has(.side-menu:checked) {
         gap: 40px;
         margin: 25px 0 50px 0;
         flex-direction: column;
-
         div {
           margin: 0 auto;
-          font-size: 1.15rem;
           filter: drop-shadow(5px 5px 4px var(--shadow));
           width: 80%;
           background-color: var(--light);
@@ -274,30 +270,11 @@ body:has(.side-menu:checked) {
             text-decoration: none;
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
             &:hover {
               text-decoration: underline;
               color: var(--accent);
-            }
-            h3 {
-              margin: 0;
-              font-size: 1.75rem;
-            }
-            p {
-              margin-top: auto;
-              font-size: 0.75rem;
-            }
-          }
-        }
-      }
-    }
-    .latest-posts {
-      .tiles {
-        div {
-          a {
-            display: flex;
-            flex-direction: column;
-            h3 {
-              padding-bottom: 30px;
             }
           }
         }
@@ -305,21 +282,13 @@ body:has(.side-menu:checked) {
     }
     .values {
       color: white;
-      padding: 20px 0 100px 0;
       background-color: var(--dark);
       p {
-        width: 80%;
         text-align: justify;
-        margin: 0 auto 20px auto;
       }
     }
     .contact-form {
       background-color: var(--medium);
-      padding: 50px 0 75px 0;
-      h3 {
-        text-align: center;
-        font-size: 1.5rem;
-      }
       form {
         padding: 0 5%;
         input,
