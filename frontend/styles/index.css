@@ -56,10 +56,6 @@ body:has(.side-menu:checked) {
   .wrapper {
     .navbar {
       nav {
-        @media screen and (max-height: 400px) {
-          max-height: calc(100% - 75px);
-          overflow-y: scroll;
-        }
         max-height: 100%;
       }
     }
@@ -210,7 +206,10 @@ body:has(.side-menu:checked) {
     & > h3,
     & > p,
     & > div {
-      padding: 0 5%;
+      padding: 10px 5%;
+    }
+    & > ul {
+      padding: 0 15%;
     }
     .hero {
       text-align: center;
@@ -229,12 +228,12 @@ body:has(.side-menu:checked) {
         background-size: 100%;
         background-repeat: no-repeat;
         background-origin: content-box;
+        background-position: center;
       }
       h2 {
         color: white;
         font-size: 1rem;
         padding-top: 25px;
-        width: 75%;
         margin: auto;
         position: relative;
         span {
@@ -246,9 +245,7 @@ body:has(.side-menu:checked) {
       }
     }
     .services,
-    .latest-posts,
-    .values,
-    .contact-form {
+    .latest-posts {
       padding: 20px 5%;
       h2,
       h3 {
@@ -304,8 +301,13 @@ body:has(.side-menu:checked) {
     }
     .contact-page {
       .contact-form {
+        text-align: left;
         background-color: white;
+        h3 {
+          text-align: left;
+        }
         form {
+          padding: 0;
           input,
           textarea {
             background-color: var(--light);
@@ -321,5 +323,176 @@ body:has(.side-menu:checked) {
     color: white;
     margin-top: auto;
     padding: 10px 0;
+  }
+}
+
+/* Portrait Mobile Device */
+
+@media screen and (max-height: 400px) {
+  body:has(.side-menu:checked) {
+    .wrapper {
+      .navbar {
+        nav {
+          max-height: calc(100% - 75px);
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
+}
+
+/* Landscape Mobile Device / Portrait Tablet */
+
+@media screen and (min-width: 800px) {
+  body:has(.side-menu:checked) {
+    .wrapper {
+      .navbar {
+        nav {
+          max-height: unset;
+          overflow: unset;
+        }
+      }
+    }
+  }
+  .wrapper {
+    .navbar {
+      .hamburger-menu {
+        display: none;
+      }
+      nav {
+        position: relative;
+        height: unset;
+        width: unset;
+        max-height: unset;
+        top: 0;
+        ul {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+    main {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > p,
+      & > div {
+        padding: 10px 20%;
+      }
+      & > ul {
+        padding: 0 25%;
+      }
+      .hero {
+        height: 400px;
+        h2 {
+          font-size: 1.75rem;
+        }
+      }
+      .services,
+      .latest-posts {
+        .tiles {
+          flex-direction: row;
+        }
+      }
+      .values {
+        padding: 20px 25%;
+      }
+      /* .contact-page {
+        .contact-form {
+          padding: 50px 30%;
+          padding: 0;
+          form {
+            width: 100%;
+          }
+        }
+      } */
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    main {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > p,
+      & > div {
+        padding: 10px 20%;
+      }
+      & > ul {
+        padding: 0 30%;
+      }
+      .hero {
+        height: 600px;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      .services {
+        .tiles {
+          margin: 25px 15% 50px 15%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    main {
+      .values {
+        padding: 50px 30%;
+        form {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .wrapper {
+    main {
+      .values {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 10%;
+        gap: 40px;
+        justify-content: center;
+        div {
+          width: 450px;
+        }
+      }
+      .services,
+      .latest-posts {
+        .tiles {
+          justify-content: center;
+          div {
+            width: 350px;
+            margin: 0;
+          }
+        }
+      }
+      .contact-form {
+        h3 {
+          text-align: center;
+        }
+        form {
+          width: 60%;
+          margin: auto;
+        }
+      }
+      .contact-page {
+        .contact-form {
+          h3 {
+            text-align: left;
+          }
+          form {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }
