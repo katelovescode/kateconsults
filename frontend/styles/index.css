@@ -53,7 +53,6 @@ body:has(.side-menu:checked) {
     .navbar {
       nav {
         max-height: 100%;
-        top: 100px;
       }
     }
   }
@@ -81,6 +80,10 @@ body:has(.side-menu:checked) {
       display: flex;
       text-align: center;
       padding-left: 100px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
       img {
         width: 65px;
         max-width: 100%;
@@ -111,6 +114,9 @@ body:has(.side-menu:checked) {
           }
         }
       } /* Hide checkbox */
+      @media screen and (min-width: 825px) {
+        display: none;
+      }
     }
     /* Menu Icon */
     .hamb {
@@ -320,7 +326,36 @@ body:has(.side-menu:checked) {
   }
 }
 
-/* Tablet Styling */
+/* Tablet Styling - Landscape */
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    .navbar {
+      header {
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      nav {
+        ul {
+          li {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    main {
+      .latest-posts {
+        margin: 150px -45%;
+      }
+    }
+  }
+}
+
+/* Tablet Styling - Portrait */
 
 @media screen and (max-width: 825px) {
   .wrapper {
@@ -334,7 +369,7 @@ body:has(.side-menu:checked) {
       }
       header {
         div {
-          padding: 0 20px;
+          padding: 0 30px;
         }
       }
       nav {
@@ -342,12 +377,22 @@ body:has(.side-menu:checked) {
         height: 100%;
         position: fixed;
         overflow: hidden;
+        top: 75px;
         max-height: 0;
         background-color: white;
         transition: max-height 0.5s ease-out;
+        font-size: 1.5rem;
         ul {
           flex-direction: column;
+          li {
+            font-size: 1.5rem;
+          }
         }
+      }
+    }
+    main {
+      .services {
+        margin: 150px -45%;
       }
     }
   }
