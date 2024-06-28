@@ -185,7 +185,7 @@ body:has(.side-menu:checked) {
     .hero {
       margin: 0 -50%;
       text-align: center;
-      height: 700px;
+      height: 500px;
       position: relative;
       &::before {
         content: " ";
@@ -198,7 +198,6 @@ body:has(.side-menu:checked) {
         opacity: 0.9;
         background-image: url(/images/group.jpg);
         background-size: 100%;
-        background-position-y: center;
         background-repeat: no-repeat;
         background-origin: content-box;
       }
@@ -220,7 +219,7 @@ body:has(.side-menu:checked) {
     .services,
     .latest-posts,
     .values {
-      margin: 150px -25%;
+      margin: 85px -25% 150px -25%;
       h2 {
         font-size: 2.5rem;
         margin-bottom: 50px;
@@ -279,7 +278,7 @@ body:has(.side-menu:checked) {
       background-color: var(--dark);
       p {
         width: 40%;
-        text-align: left;
+        text-align: justify;
         margin: 0 auto 20px auto;
       }
     }
@@ -349,7 +348,7 @@ body:has(.side-menu:checked) {
     }
     main {
       .latest-posts {
-        margin: 150px -45%;
+        margin: 85px -45% 150px -45%;
       }
     }
   }
@@ -392,7 +391,12 @@ body:has(.side-menu:checked) {
     }
     main {
       .services {
-        margin: 150px -45%;
+        margin: 85px -45% 150px -45%;
+      }
+      .values {
+        p {
+          width: 60%;
+        }
       }
     }
   }
