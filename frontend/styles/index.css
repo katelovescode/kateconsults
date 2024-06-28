@@ -53,10 +53,13 @@ a {
 }
 
 body:has(.side-menu:checked) {
-  /* overflow: hidden; */
   .wrapper {
     .navbar {
       nav {
+        @media screen and (max-height: 400px) {
+          max-height: calc(100% - 75px);
+          overflow-y: scroll;
+        }
         max-height: 100%;
       }
     }
@@ -129,9 +132,6 @@ body:has(.side-menu:checked) {
           }
         }
       } /* Hide checkbox */
-      @media screen and (min-width: 825px) {
-        display: none;
-      }
     }
     /* Menu Icon */
     .hamb {
@@ -183,7 +183,7 @@ body:has(.side-menu:checked) {
           font-weight: 700;
           margin: 15px;
           text-underline-offset: 10px;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           a {
             &.current {
               color: var(--current-nav-color);
