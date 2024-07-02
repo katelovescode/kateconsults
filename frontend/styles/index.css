@@ -211,6 +211,17 @@ body:has(.side-menu:checked) {
     & > ul {
       padding: 0 15%;
     }
+    & > blockquote {
+      font-style: italic;
+      padding: 10px 20px;
+      margin: 10px 5%;
+      &:nth-child(even) {
+        background-color: var(--light);
+      }
+      &:nth-child(odd) {
+        border: 1px solid var(--dark);
+      }
+    }
     .hero {
       text-align: center;
       height: 225px;
@@ -343,7 +354,7 @@ body:has(.side-menu:checked) {
 
 /* Landscape Mobile Device / Portrait Tablet */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   body:has(.side-menu:checked) {
     .wrapper {
       .navbar {
@@ -382,6 +393,10 @@ body:has(.side-menu:checked) {
       & > ul {
         padding: 0 25%;
       }
+      & > blockquote {
+        padding: 10px 40px;
+        margin: 10px 20%;
+      }
       .hero {
         height: 400px;
         h2 {
@@ -413,13 +428,6 @@ body:has(.side-menu:checked) {
 @media screen and (min-width: 1000px) {
   .wrapper {
     main {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > p,
-      & > div {
-        padding: 10px 20%;
-      }
       & > ul {
         padding: 0 30%;
       }
@@ -441,6 +449,10 @@ body:has(.side-menu:checked) {
 @media screen and (min-width: 1200px) {
   .wrapper {
     main {
+      & blockquote {
+        margin: 100px 30%;
+        padding: 100px 50px;
+      }
       .values {
         padding: 50px 30%;
         form {
