@@ -314,6 +314,12 @@ body:has(.side-menu:checked) {
         }
       }
     }
+    .culture,
+    .coaching {
+      ul {
+        list-style-type: none;
+      }
+    }
     .contact-page {
       .contact-form {
         text-align: left;
