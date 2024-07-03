@@ -213,8 +213,8 @@ body:has(.side-menu:checked) {
     }
     & > blockquote {
       font-style: italic;
-      padding: 10px 20px;
-      margin: 10px 5%;
+      margin: 25px 5%;
+      padding: 25px;
       &:nth-child(even) {
         background-color: var(--light);
       }
@@ -257,7 +257,7 @@ body:has(.side-menu:checked) {
     }
     .services,
     .latest-posts {
-      padding: 20px 5%;
+      padding: 100px 5%;
       h2,
       h3 {
         text-align: center;
@@ -289,6 +289,8 @@ body:has(.side-menu:checked) {
       }
     }
     .values {
+      padding-top: 100px;
+      padding-bottom: 100px;
       color: white;
       background-color: var(--dark);
       p {
@@ -297,6 +299,8 @@ body:has(.side-menu:checked) {
     }
     .contact-form {
       background-color: var(--medium);
+      padding-top: 100px;
+      padding-bottom: 100px;
       form {
         padding: 0 5%;
         input,
@@ -393,10 +397,6 @@ body:has(.side-menu:checked) {
       & > ul {
         padding: 0 25%;
       }
-      & > blockquote {
-        padding: 10px 40px;
-        margin: 10px 20%;
-      }
       .hero {
         height: 400px;
         h2 {
@@ -412,15 +412,6 @@ body:has(.side-menu:checked) {
       .values {
         padding: 20px 25%;
       }
-      /* .contact-page {
-        .contact-form {
-          padding: 50px 30%;
-          padding: 0;
-          form {
-            width: 100%;
-          }
-        }
-      } */
     }
   }
 }
@@ -429,7 +420,11 @@ body:has(.side-menu:checked) {
   .wrapper {
     main {
       & > ul {
-        padding: 0 30%;
+        padding: 0 32%;
+      }
+      & > blockquote {
+        margin: 50px 20%;
+        padding: 50px;
       }
       .hero {
         height: 600px;
@@ -449,12 +444,8 @@ body:has(.side-menu:checked) {
 @media screen and (min-width: 1200px) {
   .wrapper {
     main {
-      & blockquote {
-        margin: 100px 30%;
-        padding: 100px 50px;
-      }
       .values {
-        padding: 50px 30%;
+        padding: 100px 30%;
         form {
           width: 100%;
         }
@@ -469,7 +460,6 @@ body:has(.side-menu:checked) {
       .values {
         display: flex;
         flex-wrap: wrap;
-        padding: 50px 10%;
         gap: 40px;
         justify-content: center;
         div {
@@ -504,6 +494,25 @@ body:has(.side-menu:checked) {
             margin: 0;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .wrapper {
+    main {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > p,
+      & > div {
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+      & > blockquote {
+        max-width: 60%;
+        margin: 50px 30%;
       }
     }
   }
