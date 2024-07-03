@@ -71,7 +71,7 @@ layout: default
   </div>
 </div>
 
-<div class="latest-posts">
+<!-- <div class="latest-posts">
   <h2>Latest Posts</h2>
   <div class="tiles">
   {% for post in collections.posts.resources limit:3 %}
@@ -83,6 +83,6 @@ layout: default
     </div>
   {% endfor %}
   </div>
-</div>
+</div> -->
 
 {% render "contact_form" %}
